@@ -1,22 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Learning Bootstrap</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body>
-    <div class="jumbotron">
-    <h1>Boostrap CheatSheet</h1>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Cheat Sheet</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bootstrap CheatSheet</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- JUMBOTRON -->
+
+<div class="jumbotron text-center">
+<div class="container">
+<h1>Welcome To My Website</h1>
+<p>alskjdflkja;lsjkdl;fj;asjdfk</p>
+<a href="#" class="btn btn-primary">Read more</a>
+<hr>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">
+      </a>
+    </div>
   </div>
-  <h2></h2>
-  <ol>
-    <li>Setup</li>
-    <li></li>
-    <li></li>
-  </ol>
+</nav>
+
+  <!-- TYPOGRAPHY -->
+  <div class="container">
+    <h1 class="page-header">Hello, world! <small>secondary text</small></h1>
+    <p class="lead">
+    sample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample
+</p>
+    <p<mark>
+    sample paragraphsample paragraphsample </mark>,paragraphsample <del>paragraphsample</del> paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample paragraphsample<u> paragraphsample paragraphsample </u>paragraphsample paragraphsample paragraphsample
+</p>
+
+<hr>
+<!-- ALIGNMNET & TRANSFORMATION-->
+<p class="text-left text-lowercase">Left alighned text.</p>
+<p class="text-center text-uppercase ">Center aligned text.</p>
+<p class="text-right Text-capitalize">Right aligned text.</p>
+<p class="text-justify">Justified text.</p>
+<p class="text-nowrap">No wrap text.</p>
+
+<!-- QUICK FLOATS -->
+
+<div class="pull-right"> Div floated to right</div>
+<div class="pull-center"> Div floated to right</div>
+
+<!-- CLEAR FLOAT -->
+<div class="clearfixt"></div>
+
+<hr>
+
+<!-- BLOCKQUOTE -->
+<blockquote class="blockquote-reverse">
+<p> test paragrapchalkjsdl;fjlajsdlkfj;lajdlfkj;lajkdlfj;adfl;f</p>
+<footer>Quote by <cite title-"john Doe">John does</cite></footer>
+</blockquote>
+
+<hr>
+
+<!-- LIST -->
+<ul class="list-unstyled">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ul>
+
+<ul class="list-inline">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ul>
+
+<!-- CODE -->
+<code>&lt;h1&gt;Heading text&lt;/h1&gt;</code>
+<br>
+Change directory with <kbd>cd</kbd>
+<br>
+
+To edit settings, press <kbd><kbd>ctrl</kbd>+<kbd>,</kbd></kbd>
+
+<hr>
+<!-- CONTEXTUAL COLORS -->
+
+<P class="text-primary">Hello World</p>
+<p class="text-success">Hello world</p>
+<p class="text-info">Hello world</p>
+<p class="text-warning">Hello world</p>
+<p class="text-danger">Hello world</p>
+<p class="text-muted">Hello world</p>
+
+<!-- CONTEXTUAL BACKGROUND COLORS -->
+
+<P class="bg-primary">Hello World</p>
+<p class="bg-success">Hello world</p>
+<p class="bg-info">Hello world</p>
+<p class="bg-warning">Hello world</p>
+<p class="bg-danger">Hello world</p>
+<p class="bg-muted">Hello world</p>
+</div>
+<hr>
+<div class"container">
+
+
+<!-- BUTTONS -->
+
+<button class="btn btn-default">Button</button>
+<a href="#" class="btn btn-default" role="button">Link</a>
+<input type="submit" class="btn btn-default" value="Submit">
+<br>
+<!-- CONTEXTUAL BUTTONS -->
+
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-info">info</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-link">Link</button>
+<br>
+<!-- BUTTON SIZES -->
+
+<button class="btn btn-default btn-lg">Default</button>
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary btn-sm">Default</button>
+<button class="btn btn-default btn-xs" disabled="disabled">Default</button>
 </div>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+<!-- FORMS -->
+
+<div class="container">
+<form>
+<div class="form-group">
+<label>Name</label>
+<input type="text" class="form-control" placeholder="Add Name">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="text" class="form-control" placeholder="Add Email">
+</div>
+
+<div class="form-group">
+<label>Message</label>
+<textarea class="form-control" placeholder="Add Message"></textarea>
+</div>
+
+<div class="form-group">
+<label>Gender</label>
+<select class="form-control">
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Upload File</label>
+<input type="file">
+<p class="help-block">Only png and jpg allowed</p>
+</div>
+
+<div class="checkbox">
+  <label><input type="checkbox" value="">Option 1</label>
+</div>
+
+<button type="submit" class="btn btn-default">Submit</button>
+
+</form>
+
+<hr>
+<!--INLINE FORM -->
+
+<form class="form-inline">
+  <div class="form-group">
+  <label>Email</label>
+  <input type="email" class="form-control" placeholder= "Email">
+  </div>
+
+  <form class="form-inline">
+  <div class="form-group">
+  <label>Password</label>
+  <input type="Password" class="form-control" placeholder= "Password">
+  </div>
+
+  <form class="checkbox">
+  <label>
+  <input type="checkbox"> Remember me
+  </label>
+<button type="submit" class="btn btn-default">Login</button>
+  
+</form>
+</div>
+
+</div>
+
+<hr>
+
+<!-- TABLES -->
+<div class="container">
+  <h2>Basic Table</h2>
+           
+  <table class="table table-striped table-bordered table-hover table-condensed">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="danger">
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="success">
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr>
+
+<!-- LIST GROUP -->
+
+<div class="container">
+  <h2>Basic List Group</h2>
+  <ul class="list-group">
+    <li class="list-group-item active">First item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+  </ul>
+
+<div class="list-group">
+<a href="#" class="list-group-item">Item</a>
+<a href="#" class="list-group-item">Item</a>
+<a href="#" class="list-group-item list-group-item-success">Item</a>
+<a href="#" class="list-group-item">Item</a>
+</div>
+
+<div class="container">
+
+<!-- PANELS -->
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel Footer</div>
+</div>
+
+<!-- WELLS -->
+
+<div class="well"> Hello World</div>
+<div class="well well-lg"> Hello World</div>
+<div class="well well-sm"> Hello World</div>
+
+<hr>
+
+<!-- ALERTS -->
+
+<div class="alert alert-success" role="alert">A success alert</div>
+<div class="alert alert-info" role="alert">An info alert</div>
+<div class="alert alert-warning" role="alert">A warning alert</div>
+<div class="alert alert-danger" role="alert">A danger alert</div>
+
+<div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+
+<!-- PROGRESS BARS -->
+<div class="progress">
+<div class="progress-bar-success progress-bar-striped active" style="width:50%;">
+50%
+
+</div>
+</div>
+
+<hr>
+
+<!-- LABELS -->
+
+<div>
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+</div>
+
+<hr>
+<!-- BADGES -->
+
+<div>
+<a href="#">Inbox <span class="badge">42</span></a>
+
+<button class="btn btn-primary" type="button">
+  Messages <span class="badge">4</span>
+</button>
+
+</div>
+<div class="container">
+<img class="thumbnail" src=""
+
+<!-- GRIDS -->
+
+<div class="container"
+
+<div class="row">
+<div class="col-md-8">
+<p> a;lskjdfljalsdjkfl;ajkdsflkjaldjkfl;adjfl;kjadlfjladjfljafdl;jads;lfj</p>
+</div>
+
+<div class= "col-md-4">
+<p> a;lksjdlfjkaljdf;ja;dfkjl;ajksdlf</p>
+</div>
+
+<div class="row">
+<div class="col-md-3">
+<p> a;lskjdfljalsdjkfl;ajkdsflkjaldjkfl;adjfl;kjadlfjladjfljafdl;jads;lfj</p>
+</div>
+
+<div class= "col-md-3">
+<p> a;lksjdlfjkaljdf;ja;dfkjl;ajksdlf</p>
+</div>
+
+<div class="row">
+<div class="col-md-3">
+<p> a;lskjdfljalsdjkfl;ajkdsflkjaldjkfl;adjfl;kjadlfjladjfljafdl;jads;lfj</p>
+</div>
+
+<div class= "col-md-3">
+<p> a;lksjdlfjkaljdf;ja;dfkjl;ajksdlf</p>
+</div>
+
+</div>
+
+
+
+
+<div style="height:400px"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
